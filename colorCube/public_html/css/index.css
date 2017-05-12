@@ -9,9 +9,9 @@ and open the template in the editor.
 */
 
 .index-page .gallery-wrap, .index-page .gallery-wrap-2{
-        box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.4);
     margin:20px auto;
-        padding: 20px;
+    padding: 20px;
 
 
 }
@@ -25,7 +25,7 @@ and open the template in the editor.
     padding:50px;
     margin:10px;
     float:left;
-    
+
 }
 .index-page .color-input{
     display: block;
@@ -33,9 +33,9 @@ and open the template in the editor.
     padding: 5px 10px;
     font-size: 18px;
 }
-.index-page .submit{
+.index-page .submit, .index-page .gallery-wrap-2 button{
     display: block;
-    margin: auto;
+    margin: 25px auto;
     border: none;
     background: #e86666;
     color: #fff;
@@ -43,4 +43,18 @@ and open the template in the editor.
     border-radius: 5px;
     font-size: 17px;
     
+
+}
+.index-page a{
+    display:block;
+    display: inline-block;
+    background: gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition:all .2s;
+    border:2px solid transparent;
 }

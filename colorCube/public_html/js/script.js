@@ -5,7 +5,6 @@
  */
 //Random Colored Box Generator
 $(document).ready(function () {
-
     //selects box to be colored
     var box = $('.index-page .box');
     //list of colors inputted by user
@@ -13,7 +12,7 @@ $(document).ready(function () {
     //color inputted by user
     var boxList = [];
     //selects submit button
-    var submitBtn = $('.index-page button');
+    var submitBtn = $('.index-page .submit');
     //submit button action
     submitBtn.on('click', function () {
         //create a box
@@ -36,22 +35,109 @@ $(document).ready(function () {
         }
     });
 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 
-//    submitBtn.on('click', function () {
-//        
-//        var colorChoice = $('.index-page .color-input').val();
-//        console.log(colorChoice);
-//        
-//        
-//        colors.push(colorChoice);
-//        console.log(colors);
-//        
-//        box.css({
-//            "background-color": colors[0]
-//        });
-//        colors.pop();
-//        
-//    });
+    function randomizer() {
+        var links = [];
+        var link = $('.index-page a');
+        var colors = ["#00843D",
+            "#4ba23f",
+            "#78be20",
+            "#c5e86c",
+            "#823b34",
+            "#e15230",
+            "#d45d00",
+            "#ffb500",
+            "#fbd865",
+            "#595478",
+            "#0095c8",
+            "#00bfb3",
+            "#86c8bc",
+            "#bdd6e6",
+            "#696158",
+            "#bc8279",
+            "#a7a8aa",
+            "#ddd0ce",
+            "#275D38",
+            "#ffde56",
+            "#55a191",
+            "#2c6cc3",
+            "#003b6f"];
+        link.each(function () {
+            var z = Math.ceil(Math.random() * 10);
+            colorResult = colors[z];
+            for (var x = 0; x <= links.length; x++) {
+                switch (z) {
+                    case 0:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 1:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 2:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 3:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 4:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 5:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 6:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 7:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 8:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 9:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 10:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                    case 11:
+                        $(this).css({
+                            "background": colorResult
+                        });
+                        break;
+                }
+            }
+            links.push(this);
+        });
+    }
+    $(".gallery-wrap-2 .random").on('click', function () {
+        randomizer();
+    });
+
 
 
 
