@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 11, 2017, 5:03:50 PM
+    Author     : Grok the Defiler
+*/
+
+.index-page .gallery-wrap, .index-page .gallery-wrap-2{
+        box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.4);
+    margin:20px auto;
+        padding: 20px;
+
+
+}
+.index-page h2{
+    text-align:center;
+    margin:20px 0;
+}
+.index-page .box{
+    box-shadow: 1px 1px 12px -1px rgba(0,0,0,0.4);
+    border-radius:5px;
+    padding:50px;
+    margin:10px;
+    float:left;
+    
+}
+.index-page .color-input{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.index-page .submit{
+    display: block;
+    margin: auto;
+    border: none;
+    background: #e86666;
+    color: #fff;
+    padding: 5px 50px;
+    border-radius: 5px;
+    font-size: 17px;
+    
+}
